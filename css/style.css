@@ -1464,6 +1464,7 @@ body.ie .ibg img {
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
   top: 8px;
   left: 0px;
   position: absolute;
@@ -1481,23 +1482,23 @@ body.ie .ibg img {
   bottom: 0px;
 }
 
-.icon-menu.active span {
-  -ms-transform: scale(0);
+.icon-menu._active span {
   -webkit-transform: scale(0);
-  transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
 }
 
-.icon-menu.active span:first-child {
-  -ms-transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+.icon-menu._active span:first-child {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
   top: 8px;
 }
 
-.icon-menu.active span:last-child {
-  -ms-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+.icon-menu._active span:last-child {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
   bottom: 8px;
 }
 
@@ -2078,7 +2079,7 @@ body.ie .ibg img {
 
 @media (max-width: 767px) {
   .slick-slider .slick-arrow {
-    display: none;
+    display: none !important;
   }
 
   .features {
