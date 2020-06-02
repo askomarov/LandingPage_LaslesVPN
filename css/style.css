@@ -2077,6 +2077,10 @@ body.ie .ibg img {
 }
 
 @media (max-width: 767px) {
+  .slick-slider .slick-arrow {
+    display: none;
+  }
+
   .features {
     padding: 45px 0px 45px 0px;
   }
@@ -2266,10 +2270,6 @@ body.ie .ibg img {
 @media (max-width: 461px) {
   .slick-slider .slick-list {
     padding: 0 0 20px !important;
-  }
-
-  .slick-slider .slick-arrow {
-    display: none;
   }
 }
 
