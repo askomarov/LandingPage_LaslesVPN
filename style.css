@@ -886,7 +886,9 @@ body.ie .ibg img {
   width: 396px !important;
   height: 226px;
   display: grid;
-  grid-template-areas: "l n . r st" "l s . r st" "t t t t t";
+  grid-template-areas: "l n . r st"
+ "l s . r st"
+ "t t t t t";
   grid-template-rows: 25px 25px 100px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1004,7 +1006,7 @@ body.ie .ibg img {
 }
 
 .slick-slider .slick-arrow.slick-prev:hover {
-  background: url("../img/hoverleft.svg") 0 0 no-repeat;
+  box-shadow: 0px 0px 1px 0 black;
 }
 
 .slick-slider .slick-arrow.slick-next {
@@ -1012,7 +1014,7 @@ body.ie .ibg img {
 }
 
 .slick-slider .slick-arrow.slick-next:hover {
-  background: url("../img/hoverright.svg") 0 0 no-repeat;
+  box-shadow: 0px 0px 1px 0 black;
 }
 
 .slick-slider .slick-dots {
@@ -1354,7 +1356,8 @@ body.ie .ibg img {
       -ms-flex: 0 1 33.333%;
           flex: 0 1 33.333%;
   display: grid;
-  grid-template-areas: "a b" "a c";
+  grid-template-areas: "a b"
+ "a c";
   grid-template-columns: 55px 1fr;
   grid-template-rows: 27.5px;
   -webkit-column-gap: 36.5px;
